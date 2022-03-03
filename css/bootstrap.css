@@ -336,7 +336,8 @@ h6, .h6 {
 .display-3 {
   font-size: 4.5rem;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.2; 
+}
 
 .display-4 {
   font-size: 3.5rem;
@@ -1749,7 +1750,7 @@ textarea.form-control {
 
 .btn {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 500;
   color: #212529;
   text-align: center;
   vertical-align: middle;
