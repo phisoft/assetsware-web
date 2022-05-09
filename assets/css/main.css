@@ -1402,7 +1402,7 @@ p {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: linear-gradient(to right, rgba(132, 169, 140, 0.6) 0%, rgb(0, 0, 0) 100%); }
+      /*===background: linear-gradient(to right, rgba(132, 169, 140, 0.6) 0%, rgb(0, 0, 0) 100%); ===*/ }
     .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h2 {
       margin-bottom: 25px; }
     .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title p {
