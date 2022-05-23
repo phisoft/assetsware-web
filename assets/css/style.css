@@ -1,99 +1,111 @@
 .div-line {
-    width: 50px;
-    background-color: #fff;
-    height: 3px;
-    margin: 20px auto;
-  }
+  width: 50px;
+  background-color: #fff;
+  height: 3px;
+  margin: 20px auto;
+}
 
 .btn-clean {
-    border-color: #F5F5F5;
-    color: #F5F5F5;
-    text-transform: uppercase;
-    letter-spacing: 0;
-  }
-  
-  .btn-clean:hover, .btn-clean:focus, .btn-clean:active {
-    color: #fff;
-  }
-  
+  background-color: #274246;
+  /* border-color: #F5F5F5; */
+  color: #F5F5F5;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.btn-clean:hover {
+  background-color: #F5F5F5;
+  color: #274246;
+}
+
 
 /*--------------------
   Features Section
 ----------------------*/
 
 #features-section {
-    padding: 120px 0!important;
-    padding-bottom: 100px!important;
-  }
-  
-  #features-section .title-section {
-    padding-bottom: 80px;
-  }
-  
-  .features-image {
-    text-align: center;
-  }
-  
-  .choose-image {
-    text-align: center;
-  }
-  
-  ul.features-list {
-    list-style: none;
-    padding: 0;
-    padding-top: 50px;
-  }
-  
-  ul.features-list li {
-    margin-bottom: 30px;
-  }
-  
-  .iconbox {
-    float: left;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-  }
-  
-  .iconbox i {
-    font-size: 32px;
-    color: #439975
-  }
-  
-  .features-box-content {
-    margin-left: 70px;
-  }
-  
-  .features-box-content h6 {
-    margin-top: 0;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-  }
-  
-  .creative-content-left, .creative-content-right {
-    padding-top: 100px;
-  }
-  
-  #creative-section-1 h2, #creative-section-2 h2, #features-app-section-1 h2, #features-app-section-2 h2 {
-    font-weight: 400;
-    letter-spacing: 2px;
-    font-size: 32px;
-    text-transform: capitalize;
-  }
-  
-  #creative-section-1 p, #creative-section-2 p, #features-app-section-1 p {
-    line-height: 26px;
-    font-size: 14px;
-  }
-  
-  #creative-section-1 .view-more, #creative-section-2 .view-more, #features-app-section-1 .view-more, #features-app-section-2 .view-more {
-    padding-top: 30px;
-    text-align: left!important;
-  }
-  
-  .img-creative-left figure, .img-creative-right figure {
-    padding: 0 25px;
-    text-align: center;
-  }
+  padding: 120px 0 !important;
+  padding-bottom: 100px !important;
+}
+
+#features-section .title-section {
+  padding-bottom: 80px;
+}
+
+.features-image {
+  text-align: center;
+}
+
+.choose-image {
+  text-align: center;
+}
+
+ul.features-list {
+  list-style: none;
+  padding: 0;
+  padding-top: 50px;
+}
+
+ul.features-list li {
+  margin-bottom: 30px;
+}
+
+.iconbox {
+  float: left;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.iconbox i {
+  font-size: 32px;
+  color: #439975
+}
+
+.features-box-content {
+  margin-left: 70px;
+}
+
+.features-box-content h6 {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.creative-content-left,
+.creative-content-right {
+  padding-top: 100px;
+}
+
+#creative-section-1 h2,
+#creative-section-2 h2,
+#features-app-section-1 h2,
+#features-app-section-2 h2 {
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 32px;
+  text-transform: capitalize;
+}
+
+#creative-section-1 p,
+#creative-section-2 p,
+#features-app-section-1 p {
+  line-height: 26px;
+  font-size: 14px;
+}
+
+#creative-section-1 .view-more,
+#creative-section-2 .view-more,
+#features-app-section-1 .view-more,
+#features-app-section-2 .view-more {
+  padding-top: 30px;
+  text-align: left !important;
+}
+
+.img-creative-left figure,
+.img-creative-right figure {
+  padding: 0 25px;
+  text-align: center;
+}
