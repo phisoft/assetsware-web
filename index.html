@@ -1,532 +1,557 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Assetsware - Asset Tracking with QRCode</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/icon_ori.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Assetsware - Asset Tracking with QRCode</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- ========================= CSS here ========================= -->
-		<link rel="stylesheet" href="assets/css/bootstrap-5.0.0-alpha.min.css">
-        <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
-		<link rel="stylesheet" href="assets/css/animate.css">
-		<link rel="stylesheet" href="assets/css/main.css">
-        
-		<link rel="stylesheet" href="assets/css/style.css">
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <!--[if lte IE 9]>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/icon_ori.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-alpha.min.css">
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <!-- ========================= preloader start ========================= -->
-            <div class="preloader">
-                <div class="loader">
-                    <div class="ytp-spinner">
-                        <div class="ytp-spinner-container">
-                            <div class="ytp-spinner-rotator">
-                                <div class="ytp-spinner-left">
-                                    <div class="ytp-spinner-circle"></div>
-                                </div>
-                                <div class="ytp-spinner-right">
-                                    <div class="ytp-spinner-circle"></div>
-                                </div>
-                            </div>
+    <!-- ========================= preloader start ========================= -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        <!-- preloader end -->
+        </div>
+    </div>
+    <!-- preloader end -->
 
-        <!-- ========================= header start ========================= -->
-        <header class="header navbar-area bg-white">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="assets/img/logo/assetsware_ori.svg" alt="Logo">
-                            </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
+    <!-- ========================= header start ========================= -->
+    <header class="header navbar-area bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/logo/assetsware_ori.svg" alt="Logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
 
-                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                                <ul id="nav" class="navbar-nav ml-auto">
-                                    <li class="nav-item">
-                                        <a class="page-scroll active" href="#home">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#about">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#features">Features</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#contact">Contact</a>
-                                    </li>
-                                </ul>
-                            </div> <!-- navbar collapse -->
-                        </nav> <!-- navbar -->
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                            <ul id="nav" class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="page-scroll active" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="page-scroll" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="page-scroll" href="#features">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="page-scroll" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div> <!-- navbar collapse -->
+                    </nav> <!-- navbar -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+
+    </header>
+    <!-- ========================= header end ========================= -->
+
+    <!-- ========================= carousel-section Start ========================= -->
+    <section id="home">
+        <div class="container">
+            <div class="row flex-wrap-reverse">
+                <div class="col-lg-6 wow fadeInUp mt-5 mt-lg-5">
+                    <div class="section-title">
+                        <h2 style="font-size: 2.5em; color: #051441;">ASSETS TRACKING WITH <br> QR CODE
+                        </h2>
+                        <br>
+                        <p style="font-size: 2.0em; color: #051441;">Simple • Easy • Quick</p>
+                        <br>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        
-        </header>
-        <!-- ========================= header end ========================= -->
+                    <div class="pt-4">
+                        <a href="#about" class="btn btn-clean">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp">
+                    <img src="/assets/img/carousel/monitor.png" alt="image" class="img-fluid">
+                </div>
+            </div>
+    </section>
+    <!-- ========================= carousel-section end ========================= -->
 
-        <!-- ========================= carousel-section end ========================= -->
-        <section id="home" class="carousel-section-wrapper">
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-section carousel-item active clip-bg pt-225 pb-200 img-bg"
-                        style="background-image: url('assets/img/carousel/1.svg');">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col sm 3" >
-                                    <div class="carousel-content text-left">
-                                        <div class="section-title">
-                                            <h2 class="text-white" style="font-size: 2.5em;">ASSETS TRACKING WITH QR CODE</h2>
-                                            <br><br>
-                                            <p class="text-white" style="font-size: 2.0em;">Simple • Easy • Quick</p>
-                                        </div>
+    <!-- ========================= about-section start ========================= -->
+    <section id="about" class="feature-section pt-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 col-lg-7 col-md-9 mx-auto">
+                    <div class="section-title text-center mb-55">
+                        <span class="wow fadeInDown" data-wow-delay=".2s">Track assets with QR code scan</span>
+                        <h4 class="wow fadeInUp" data-wow-delay=".4s">We can track any and all of your assets from
+                            acquisition to retirement.</h4><br>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">Our highly configurable and user-friendly Asset
+                            Tracking System combines web system, QR scanner, QR labels and mobile devices to track
+                            assets.</p>
+                    </div>
+                </div>
+            </div>
 
-                                        <div class="btn">
-                                          <a href="#about" class="btn btn-clean">Read more</a>
-                                        </div> <!-- end hero-btn -->
-                                    </div>
-                                </div>
-                            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box box-style">
+                        <div class="feature-icon box-icon-style">
+                            <i class="lni lni-magnifier"></i>
+                        </div>
+                        <div class="box-content-style feature-content">
+                            <h4>Track all your assets</h4>
+                            <p>Every business is unique, and so are its assets. We understand this problem, so we
+                                designed asset management software to track anything.
+                                We believe that excellent asset tracking leads to better performance - you keep your
+                                asset excellent, know where it should be, and prevent losses and damages.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box box-style">
+                        <div class="feature-icon box-icon-style">
+                            <i class="lni lni-bolt"></i>
+                        </div>
+                        <div class="box-content-style feature-content">
+                            <h4>Easy to track your assets</h4>
+                            <p>QR code tags are easy to provide assets with a unique identifier. QR code helps ensure
+                                that assets can be effortlessly located and identified at a moment's notice.
+                                Our QR codes can be easily printed at the office with a thermal printer supplied
+                                together with the system.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box box-style">
+                        <div class="feature-icon box-icon-style">
+                            <i class="lni lni-layers"></i>
+                        </div>
+                        <div class="box-content-style feature-content">
+                            <h4>Instantly get asset reporting </h4>
+                            <p>With Assetsware, you won't have to sift through cluttered files of asset records. With
+                                our asset reporting feature, you will be able to get full asset details, history,
+                                and location with just a button click from our mobile application. —an easy and
+                                effortless viewing report on the smartphone.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- ========================= carousel-section end ========================= -->
-        
-        <!-- ========================= about-section start ========================= -->
-        <section id="about" class="feature-section pt-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-10 col-lg-7 col-md-9 mx-auto">
-                        <div class="section-title text-center mb-55">
-                            <span class="wow fadeInDown" data-wow-delay=".2s">Track assets with QR code scan</span>
-                            <h4 class="wow fadeInUp" data-wow-delay=".4s">We can track any and all of your assets from acquisition to retirement.</h4><br>
-                            <p class="wow fadeInUp" data-wow-delay=".6s">Our highly configurable and user-friendly Asset Tracking System combines web system, QR scanner, QR labels and mobile devices to track assets.</p>
-                        </div>
+        </div>
+    </section>
+    <!-- ========================= about-section end =========================== -->
+
+    <!-- ========================= feature-section start ========================= -->
+    <section id="features" class="feature-section pt-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 col-lg-7 col-md-9 mx-auto">
+                    <div class="section-title text-center mb-55">
+                        <span class="wow fadeInDown" data-wow-delay=".2s">Features</span>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Why Choose?</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".4s">Take advantage of our simple yet distinctive
+                            features that will transform your business</p>
                     </div>
                 </div>
 
+
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="feature-box box-style">
-                            <div class="feature-icon box-icon-style">
-                                <i class="lni lni-magnifier"></i>
-                            </div>
-                            <div class="box-content-style feature-content">
-                                <h4>Track all your assets</h4>
-                                <p>Every business is unique, and so are its assets. We understand this problem, so we designed asset management software to track anything. 
-                                We believe that excellent asset tracking leads to better performance - you keep your asset excellent, know where it should be, and prevent losses and damages.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="feature-box box-style">
-                            <div class="feature-icon box-icon-style">
-                                <i class="lni lni-bolt"></i>
-                            </div>
-                            <div class="box-content-style feature-content">
-                                <h4>Easy to track your assets</h4>
-                                <p>QR code tags are easy to provide assets with a unique identifier. QR code helps ensure that assets can be effortlessly located and identified at a moment's notice. 
-                                Our QR codes can be easily printed at the office with a thermal printer supplied together with the system.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="feature-box box-style">
-                            <div class="feature-icon box-icon-style">
-                                <i class="lni lni-layers"></i>
-                            </div>
-                            <div class="box-content-style feature-content">
-                                <h4>Instantly get asset reporting </h4>
-                                <p>With Assetsware, you won't have to sift through cluttered files of asset records. With our asset reporting feature, you will be able to get full asset details, history, 
-                                    and location with just a button click from our mobile application. —an easy and effortless viewing report on the smartphone.</p>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            </div>
-        </section>
-        <!-- ========================= about-section end =========================== -->
-
-        <!-- ========================= feature-section start ========================= -->
-        <section id="features" class="feature-section pt-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-10 col-lg-7 col-md-9 mx-auto">
-                        <div class="section-title text-center mb-55">
-                            <span class="wow fadeInDown" data-wow-delay=".2s">Features</span>
-                            <h2 class="wow fadeInUp" data-wow-delay=".4s">Why Choose?</h2>
-                            <p class="wow fadeInUp" data-wow-delay=".4s">Take advantage of our simple yet distinctive features that will transform your business</p>
-                        </div>
-                    </div>
-
-
-                    <div class="row">
-                      <div class="col-md-3 without-padding">
+                    <div class="col-md-3 without-padding">
                         <div class="left-features-services">
-                          <ul class="features-list">
-                            <!-- feature -->
-                            <li>
-                                <div class="left-features-box animated out" data-animation="fadeInLeft" data-delay="0">
-                                    <span class="iconbox"><i class="fa fa-exchange"></i></span>
-                                    <div class="features-box-content">
-                                    <h5>Check In/Check Out</h5><br>
-                                    </div> <!-- end features-box-content -->
-                                </div> <!-- end left-features-box -->
-                            </li>
-                            <!-- feature -->
-                            <li>
-                                <div class="left-features-box animated out" data-animation="fadeInLeft" data-delay="0">
-                                    <span class="iconbox"><i class="fa fa-history"></i></span>
-                                    <div class="features-box-content">
-                                      <h5>Full Lifestyle History</h5><br>
-                                    </div> <!-- end features-box-content -->
-                                </div> <!-- end left-features-box -->
-                              </li>
-                            <!-- feature -->
-                            <li>
-                                <div class="left-features-box animated out" data-animation="fadeInLeft" data-delay="0">
-                                    <span class="iconbox"><i class="fa fa-qrcode"></i></span>
-                                    <div class="features-box-content">
-                                      <h5>QR Code Generation</h5><br>
-                                    </div> <!-- end features-box-content -->
-                                </div> <!-- end left-features-box -->
-                              </li>
-                            <!-- feature -->
-                            <li>
-                                <div class="left-features-box animated out" data-animation="fadeInLeft" data-delay="0">
-                                    <span class="iconbox"><i class="fa fa-eye"></i></span>
-                                    <div class="features-box-content">
-                                      <h5>Reporting Access</h5><br>
-                                    </div> <!-- end features-box-content -->
-                                </div> <!-- end left-features-box -->
-                              </li>
-                           
-                          </ul> <!-- end features-list -->
+                            <ul class="features-list">
+                                <!-- feature -->
+                                <li>
+                                    <div class="left-features-box animated out" data-animation="fadeInLeft"
+                                        data-delay="0">
+                                        <span class="iconbox"><i class="fa fa-exchange"></i></span>
+                                        <div class="features-box-content">
+                                            <h5>Check In/Check Out</h5><br>
+                                        </div> <!-- end features-box-content -->
+                                    </div> <!-- end left-features-box -->
+                                </li>
+                                <!-- feature -->
+                                <li>
+                                    <div class="left-features-box animated out" data-animation="fadeInLeft"
+                                        data-delay="0">
+                                        <span class="iconbox"><i class="fa fa-history"></i></span>
+                                        <div class="features-box-content">
+                                            <h5>Full Lifestyle History</h5><br>
+                                        </div> <!-- end features-box-content -->
+                                    </div> <!-- end left-features-box -->
+                                </li>
+                                <!-- feature -->
+                                <li>
+                                    <div class="left-features-box animated out" data-animation="fadeInLeft"
+                                        data-delay="0">
+                                        <span class="iconbox"><i class="fa fa-qrcode"></i></span>
+                                        <div class="features-box-content">
+                                            <h5>QR Code Generation</h5><br>
+                                        </div> <!-- end features-box-content -->
+                                    </div> <!-- end left-features-box -->
+                                </li>
+                                <!-- feature -->
+                                <li>
+                                    <div class="left-features-box animated out" data-animation="fadeInLeft"
+                                        data-delay="0">
+                                        <span class="iconbox"><i class="fa fa-eye"></i></span>
+                                        <div class="features-box-content">
+                                            <h5>Reporting Access</h5><br>
+                                        </div> <!-- end features-box-content -->
+                                    </div> <!-- end left-features-box -->
+                                </li>
+
+                            </ul> <!-- end features-list -->
                         </div> <!-- end left-features-service -->
-                      </div><!--  end col-md-3 -->
-          
-                      <div class="col-md-6">
+                    </div><!--  end col-md-3 -->
+
+                    <div class="col-md-6">
                         <div class="features-image animated out" data-animation="fadeInUp" data-delay="0">
-                          <img src="assets/img/carousel/headerAssets.png" width="100%" height="auto" alt="">
+                            <img src="assets/img/carousel/headerAssets.png" width="100%" height="auto" alt="">
                         </div> <!-- end features-image -->
-                      </div> <!-- end col-md-6 -->
-          
-                      <div class="col-md-3 without-padding">
+                    </div> <!-- end col-md-6 -->
+
+                    <div class="col-md-3 without-padding">
                         <div class="right-features-services">
-                          <ul class="features-list">
-                            <!-- feature -->
-                            <li>
-                                <div class="right-features-box animated out" data-animation="fadeInLeft" data-delay="0">
-                                    <span class="iconbox"><i class="fa fa-file"></i></span>
-                                    <div class="features-box-content">
-                                      <h5>Custom Report</h5><br>
-                                    </div> <!-- end features-box-content -->
-                                </div> <!-- end left-features-box -->
-                            </li>
-                            <!-- feature -->
-                            <li>
-                                <div class="right-features-box animated out" data-animation="fadeInLeft" data-delay="0">
-                                    <span class="iconbox"><i class="fa fa-list-ul"></i></span>
-                                    <div class="features-box-content">
-                                      <h5>Asset Listing View</h5><br>
-                                    </div> <!-- end features-box-content -->
-                                </div> <!-- end left-features-box -->
-                            </li>
-                            <!-- feature -->
-                            <li>
-                                <div class="right-features-box animated out" data-animation="fadeInLeft" data-delay="0">
-                                    <span class="iconbox"><i class="fa fa-clock-o"></i></span>
-                                    <div class="features-box-content">
-                                      <h5>Real-Time Notification</h5><br>
-                                    </div> <!-- end features-box-content -->
-                                </div> <!-- end left-features-box -->
-                            </li>
-                            <!-- feature -->
-                            <li>
-                                <div class="right-features-box animated out" data-animation="fadeInLeft" data-delay="0">
-                                    <span class="iconbox"><i class="fa fa-mobile"></i></span>
-                                    <div class="features-box-content">
-                                      <h5>Mobile Application</h5><br>
-                                    </div> <!-- end features-box-content -->
-                                </div> <!-- end left-features-box -->
-                            </li>
-                          </ul> <!-- end features-list -->
+                            <ul class="features-list">
+                                <!-- feature -->
+                                <li>
+                                    <div class="right-features-box animated out" data-animation="fadeInLeft"
+                                        data-delay="0">
+                                        <span class="iconbox"><i class="fa fa-file"></i></span>
+                                        <div class="features-box-content">
+                                            <h5>Custom Report</h5><br>
+                                        </div> <!-- end features-box-content -->
+                                    </div> <!-- end left-features-box -->
+                                </li>
+                                <!-- feature -->
+                                <li>
+                                    <div class="right-features-box animated out" data-animation="fadeInLeft"
+                                        data-delay="0">
+                                        <span class="iconbox"><i class="fa fa-list-ul"></i></span>
+                                        <div class="features-box-content">
+                                            <h5>Asset Listing View</h5><br>
+                                        </div> <!-- end features-box-content -->
+                                    </div> <!-- end left-features-box -->
+                                </li>
+                                <!-- feature -->
+                                <li>
+                                    <div class="right-features-box animated out" data-animation="fadeInLeft"
+                                        data-delay="0">
+                                        <span class="iconbox"><i class="fa fa-clock-o"></i></span>
+                                        <div class="features-box-content">
+                                            <h5>Real-Time Notification</h5><br>
+                                        </div> <!-- end features-box-content -->
+                                    </div> <!-- end left-features-box -->
+                                </li>
+                                <!-- feature -->
+                                <li>
+                                    <div class="right-features-box animated out" data-animation="fadeInLeft"
+                                        data-delay="0">
+                                        <span class="iconbox"><i class="fa fa-mobile"></i></span>
+                                        <div class="features-box-content">
+                                            <h5>Mobile Application</h5><br>
+                                        </div> <!-- end features-box-content -->
+                                    </div> <!-- end left-features-box -->
+                                </li>
+                            </ul> <!-- end features-list -->
                         </div>
-                      </div> <!-- end col-md-3 -->
+                    </div> <!-- end col-md-3 -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================= feature-section end ========================= -->
+
+    <!-- ========================= process-section start ========================= -->
+    <section id="process" class="process-section pt-100 pb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-7 col-md-9 mx-auto">
+                    <div class="section-title text-center mb-55">
+                        <span class="wow fadeInDown" data-wow-delay=".2s">Process</span>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">How Assetsware works</h2>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- ========================= feature-section end ========================= -->
-
-        <!-- ========================= process-section start ========================= -->
-        <section id="process" class="process-section pt-100 pb-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-7 col-md-9 mx-auto">
-                        <div class="section-title text-center mb-55">
-                            <span class="wow fadeInDown" data-wow-delay=".2s">Process</span>
-                            <h2 class="wow fadeInUp" data-wow-delay=".4s">How Assetsware works</h2>
+            <div class="row align-items-center time-line">
+                <div class="col-12">
+                    <div class="single-timeline">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 order-last order-lg-first">
+                                <div class="timeline-content left-content text-lg-right">
+                                    <div class="box-icon-style">
+                                        <i class="fa fa-home"></i>
+                                    </div>
+                                    <h4 class="mb-10">Assetsware Dashboard</h4>
+                                    <p>The Admin can view the overall inspection status and assets under maintenance in
+                                        the Dashboard.
+                                        To create a new asset, Admin can click the Assets option in the navigation bar.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-5">
+                                <div class="timeline-img">
+                                    <img src="assets/img/Gallery/1.png" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center time-line">
-                    <div class="col-12">
-                        <div class="single-timeline">
-                            <div class="row align-items-center">
-                                <div class="col-lg-5 order-last order-lg-first">
-                                    <div class="timeline-content left-content text-lg-right">
-                                        <div class="box-icon-style">
-                                            <i class="fa fa-home"></i>
-                                        </div>
-                                        <h4 class="mb-10">Assetsware Dashboard</h4>
-                                        <p>The Admin can view the overall inspection status and assets under maintenance in the Dashboard.
-                                           To create a new asset, Admin can click the Assets option in the navigation bar.
-                                        </p>
-                                    </div>
+                <div class="col-12">
+                    <div class="single-timeline">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="timeline-img">
+                                    <img src="assets/img/Gallery/2.png" alt="">
                                 </div>
-                                <div class="col-lg-2"></div>
-                                <div class="col-lg-5">
-                                    <div class="timeline-img">
-                                        <img src="assets/img/Gallery/1.png" alt="">
+                            </div>
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-5">
+                                <div class="timeline-content right-content text-left">
+                                    <div class="box-icon-style">
+                                        <i class="fa fa-list-ul"></i>
                                     </div>
+                                    <h4 class="mb-10">Assets Listing</h4>
+                                    <p>On the Assets page, the admin will see the list of assets that have been added.
+                                        To create a new asset, the admin can click the Create button on the top-left of
+                                        the Assets page.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="single-timeline">
-                            <div class="row align-items-center">
-                                <div class="col-lg-5">
-                                    <div class="timeline-img">
-                                        <img src="assets/img/Gallery/2.png" alt="">
+                </div>
+                <div class="col-12">
+                    <div class="single-timeline">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 order-last order-lg-first">
+                                <div class="timeline-content left-content text-lg-right">
+                                    <div class="box-icon-style">
+                                        <i class="fa fa-plus"></i>
                                     </div>
+                                    <h4 class="mb-10">Creating New Asset</h4>
+                                    <p>Admin needs to fill in the required details. After the details are completed,
+                                        the data can be saved by clicking the save button on the top-left of the page.
+                                        QR Code will be generated for the new asset. </p>
                                 </div>
-                                <div class="col-lg-2"></div>
-                                <div class="col-lg-5">
-                                    <div class="timeline-content right-content text-left">
-                                        <div class="box-icon-style">
-                                            <i class="fa fa-list-ul"></i>
-                                        </div>
-                                        <h4 class="mb-10">Assets Listing</h4>
-                                        <p>On the Assets page, the admin will see the list of assets that have been added.
-                                            To create a new asset, the admin can click the Create button on the top-left of the Assets page. 
-                                        </p>
-                                    </div>
+                            </div>
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-5">
+                                <div class="timeline-img">
+                                    <img src="assets/img/Gallery/3.png" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="single-timeline">
-                            <div class="row align-items-center">
-                                <div class="col-lg-5 order-last order-lg-first">
-                                    <div class="timeline-content left-content text-lg-right">
-                                        <div class="box-icon-style">
-                                            <i class="fa fa-plus"></i>
-                                        </div>
-                                        <h4 class="mb-10">Creating New Asset</h4>
-                                        <p>Admin needs to fill in the required details. After the details are completed, 
-                                            the data can be saved by clicking the save button on the top-left of the page. QR Code will be generated for the new asset. </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2"></div>
-                                <div class="col-lg-5">
-                                    <div class="timeline-img">
-                                        <img src="assets/img/Gallery/3.png" alt="">
-                                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="single-timeline">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="timeline-img">
+                                    <img src="assets/img/Gallery/4.png" alt="">
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="single-timeline">
-                            <div class="row align-items-center">
-                                <div class="col-lg-5">
-                                    <div class="timeline-img">
-                                        <img src="assets/img/Gallery/4.png" alt="">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-5">
+                                <div class="timeline-content right-content text-left">
+                                    <div class="box-icon-style">
+                                        <i class="fa fa-qrcode"></i>
                                     </div>
-                                </div>
-                                <div class="col-lg-2"></div>
-                                <div class="col-lg-5">
-                                    <div class="timeline-content right-content text-left">
-                                        <div class="box-icon-style">
-                                            <i class="fa fa-qrcode"></i>
-                                        </div>
-                                        <h4 class="mb-10">Asset's QR Code</h4>
-                                        <p>Admin can get the asset's QR Code on the Assets page. 
-                                            Admin can click the asset, and the Print QR Tag button will be shown on the top-left of the page.
-                                        If the button is clicked, the QR Code will be automatically downloaded. Admin can print the QR Code and stick it to the asset. 
-                                    Admin can see the details of the asset just by scanning the QR Code using the Assetsware Apps. </p>
-                                    </div>
+                                    <h4 class="mb-10">Asset's QR Code</h4>
+                                    <p>Admin can get the asset's QR Code on the Assets page.
+                                        Admin can click the asset, and the Print QR Tag button will be shown on the
+                                        top-left of the page.
+                                        If the button is clicked, the QR Code will be automatically downloaded. Admin
+                                        can print the QR Code and stick it to the asset.
+                                        Admin can see the details of the asset just by scanning the QR Code using the
+                                        Assetsware Apps. </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- ========================= process-section end ========================= -->
+        </div>
+    </section>
+    <!-- ========================= process-section end ========================= -->
 
-        <!-- ========================= contact-section start ========================= -->
-        <section id="contact" class="contact-section pt-130 pb-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4">
-                        <div class="contact-item-wrapper">
-                            <div class="row">
-                                <div class="col-12 col-md-6 col-xl-12">
-                                    <div class="contact-item">
-                                        <div class="contact-icon">
-                                            <i class="lni lni-phone"></i>
-                                        </div>
-                                        <div class="contact-content">
-                                            <h4>Contact</h4>
-                                            <p>+60 12 866 9695</p>
-                                            <p>info@phisoft.my</p>
-                                        </div>
+    <!-- ========================= contact-section start ========================= -->
+    <section id="contact" class="contact-section pt-130 pb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="contact-item-wrapper">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-xl-12">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="lni lni-phone"></i>
+                                    </div>
+                                    <div class="contact-content">
+                                        <h4>Contact</h4>
+                                        <p>+60 12 866 9695</p>
+                                        <p>info@phisoft.my</p>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6 col-xl-12">
-                                    <div class="contact-item">
-                                        <div class="contact-icon">
-                                            <i class="lni lni-map-marker"></i>
-                                        </div>
-                                        <div class="contact-content">
-                                            <h4>Address</h4>
-                                            <p>H-8-10, Aeropod Commercial</p>
-                                            <p>Square, Jalan Aeropod Off Jalan Kepayan,</p>
-                                            <p>88200 Kota Kinabalu, Sabah, MY.</p>
-                                        </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-12">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="lni lni-map-marker"></i>
+                                    </div>
+                                    <div class="contact-content">
+                                        <h4>Address</h4>
+                                        <p>H-8-10, Aeropod Commercial</p>
+                                        <p>Square, Jalan Aeropod Off Jalan Kepayan,</p>
+                                        <p>88200 Kota Kinabalu, Sabah, MY.</p>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6 col-xl-12">
-                                    <div class="contact-item">
-                                        <div class="contact-icon">
-                                            <i class="lni lni-alarm-clock"></i>
-                                        </div>
-                                        <div class="contact-content">
-                                            <h4>Schedule</h4>
-                                            <p>Monday - Friday</p>
-                                            <p>Operating Hours: 9:00 AM - 5:00 PM</p>
-                                        </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-12">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="lni lni-alarm-clock"></i>
+                                    </div>
+                                    <div class="contact-content">
+                                        <h4>Schedule</h4>
+                                        <p>Monday - Friday</p>
+                                        <p>Operating Hours: 9:00 AM - 5:00 PM</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-8">
-                        <div class="contact-form-wrapper">
-                            <div class="row">
-                                <div class="col-xl-10 col-lg-8 mx-auto">
-                                    <div class="section-title text-center mb-50">
-                                        <span class="wow fadeInDown" data-wow-delay=".2s">Interested ?</span>
-                                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Request for a demo today !</h2>
-                                    </div>
+                </div>
+                <div class="col-xl-8">
+                    <div class="contact-form-wrapper">
+                        <div class="row">
+                            <div class="col-xl-10 col-lg-8 mx-auto">
+                                <div class="section-title text-center mb-50">
+                                    <span class="wow fadeInDown" data-wow-delay=".2s">Interested ?</span>
+                                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Request for a demo today !</h2>
                                 </div>
                             </div>
-                            <form action="mailto:info@phisoft.my" class="POST">
-                                <div class="row">
-                                  <div class="col-md-6 col-sm-12 mb-3">
-                                    <input class="mr-3 form-control" type="text" name="first-name" placeholder="*First Name"
-                                      required="required" />
-                                  </div>
-                                  <div class="col-md-6 col-sm-12 mb-3">
+                        </div>
+                        <form action="mailto:info@phisoft.my" class="POST">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 mb-3">
+                                    <input class="mr-3 form-control" type="text" name="first-name"
+                                        placeholder="*First Name" required="required" />
+                                </div>
+                                <div class="col-md-6 col-sm-12 mb-3">
                                     <input class="form-control" type="text" name="last-name" placeholder="Last Name" />
-                                  </div>
                                 </div>
-                                <div class="row mb-3">
-                                  <div class="col">
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
                                     <input class="form-control" type="text" name="Subject" placeholder="*Subject"
-                                      required="required" />
-                                  </div>
+                                        required="required" />
                                 </div>
-                                <div class="row mb-3">
-                                  <div class="col">
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
                                     <input class="form-control" type="email" name="_replyto" placeholder="*E-mail"
-                                      required="required" />
-                                  </div>
+                                        required="required" />
                                 </div>
-                                <div class="row mb-3">
-                                  <div class="col">
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
                                     <textarea class="form-control" name="message" placeholder="*Your Message" rows="4"
-                                      required="required"></textarea>
-                                  </div>
+                                        required="required"></textarea>
                                 </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="button text-center">
-                                            <button type="submit" class="theme-btn">Send Message</button>
-                                        </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="button text-center">
+                                        <button type="submit" class="theme-btn">Send Message</button>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ========================= contact-section end ========================= -->
-
-        <!-- ========================= footer start ========================= -->
-        <footer class="footer pt-100">
-            <div class="container">
-
-                <div class="copyright-area">
-                    <div class="row align-items-center">
-                        <div class="col-6">
-                             <div class="footer-social-links">
-                                <ul class="d-flex">
-                                    <li><a href="https://www.facebook.com/phisoft.my/"><i class="lni lni-facebook-original"></i></a></li>
-                                    <li><a href="https://www.instagram.com/phisoft.my/"><i class="lni lni-twitter-original"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/company/phisoft-my/"><i class="lni lni-linkedin-original"></i></a></li>
-                                    <li><a href="https://www.phisoft.my/"><i class="lni lni-instagram-original"></i></a></li>
-                                </ul>
                             </div>
-                        </div>
-                        
-                        <div class="col-6">
-                            <p class="wow fadeInUp" data-wow-delay=".3s">COPYRIGHT © 2022 ASSETSWARE.COM</p>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- ========================= footer end ========================= -->
+        </div>
+    </section>
+    <!-- ========================= contact-section end ========================= -->
+
+    <!-- ========================= footer start ========================= -->
+    <footer class="footer pt-100">
+        <div class="container">
+
+            <div class="copyright-area">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <div class="footer-social-links">
+                            <ul class="d-flex">
+                                <li><a href="https://www.facebook.com/phisoft.my/"><i
+                                            class="lni lni-facebook-original"></i></a></li>
+                                <li><a href="https://www.instagram.com/phisoft.my/"><i
+                                            class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/phisoft-my/"><i
+                                            class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="https://www.phisoft.my/"><i class="lni lni-instagram-original"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <p class="wow fadeInUp" data-wow-delay=".3s">COPYRIGHT © 2022 ASSETSWARE.COM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========================= footer end ========================= -->
 
 
-        <!-- ========================= scroll-top ========================= -->
-        <a href="#" class="scroll-top">
-            <i class="lni lni-arrow-up"></i>
-        </a>
-        
-		<!-- ========================= JS here ========================= -->
-		<script src="assets/js/bootstrap.bundle-5.0.0.alpha-min.js"></script>
-        <script src="assets/js/count-up.min.js"></script>
-        <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/imagesloaded.min.js"></script>
-		<script src="assets/js/main.js"></script>
-    </body>
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-arrow-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap.bundle-5.0.0.alpha-min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/imagesloaded.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
