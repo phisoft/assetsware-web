@@ -2058,7 +2058,7 @@ p {
 }
 
 
-.box-style .box-content-style h4 {
+.box-style .box-content-style h2 {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 20px;
@@ -2879,4 +2879,20 @@ p {
   -o-transform: scale(1.15, 1.15);
   -ms-transform: scale(1.15, 1.15);
   transform: scale(1.15, 1.15);
+}
+
+#process h2{
+  font-size: 25px;
+}
+
+.fs-40 {
+  font-size:40px;
+}
+
+.fs-32 {
+  font-size:32px;
+}
+
+.color-darkblue{
+  color:#051441;
 }
