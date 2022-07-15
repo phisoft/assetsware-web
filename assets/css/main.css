@@ -272,7 +272,7 @@ p {
 }
 
 .scroll-top:hover {
-  background: rgba(55, 99, 235, 0.7);
+  background:#274246;
   color: #fff;
 }
 
@@ -2306,9 +2306,10 @@ p {
 }
 
 .time-line .single-timeline:hover .box-icon-style {
-  background: linear-gradient(#3763eb 0%, #6f58e8 100%);
+  background: rgb(172,236,186);
+  background: linear-gradient(to bottom, #65a98d 0%, #40826b 50.39%, #3b605c 100%);
   color: #fff;
-  border-color: transparent;
+  /* border-color: transparent; */
 }
 
 .time-line .single-timeline:hover .box-icon-style i {
