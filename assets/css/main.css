@@ -306,12 +306,6 @@ p {
 }
 
 /*===== All Section Title Style =====*/
-.section-title span {
-  font-size: 25px;
-  font-weight: 700;
-  color: #319873;
-  margin-bottom: 5px;
-}
 
 @media (max-width: 767px) {
   .section-title span {
@@ -329,10 +323,6 @@ p {
   .section-title h2 {
     line-height: 41px;
   }
-}
-
-.section-title p {
-  font-size: 18px;
 }
 
 /*===== All Preloader Style =====*/
@@ -1815,14 +1805,20 @@ p {
 /*===== Home =====*/
 
 #home {
-  margin: auto;
-  /* height: 100vh; */
+  margin: 0;
+  height: 100vh;
   width: 100%;
-  padding-top: 17vh !important;
-  padding-bottom: 17vh !important;
-  background-image: url('/assets/img/carousel/hero-bg.png');
+  /* padding-top: 17vh !important;
+  padding-bottom: 17vh !important; */
+  background-image: url('/assets/img/hero-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#hero{
+  height: 84vh;
+  display: flex;
+  align-items: center;
 }
 
 /* @media (max-width: 428px) {
@@ -1840,12 +1836,12 @@ p {
 } */
 
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   #home {
     padding-top: 7vh !important;
     padding-bottom: 7vh !important;
   }
-}
+} */
 
 
 
@@ -2068,6 +2064,7 @@ p {
 /*===========================
     04. About CSS 
 ===========================*/
+
 .about-section {
   background: #EFF2F9;
   padding: 180px 0;
@@ -2886,6 +2883,10 @@ p {
   font-size: 25px;
 }
 
+.fs-80 {
+  font-size:80px;
+}
+
 .fs-40 {
   font-size:40px;
 }
@@ -2894,6 +2895,18 @@ p {
   font-size:32px;
 }
 
+.fs-26 {
+  font-size:24px;
+}
+
 .color-darkblue{
   color:#051441;
+}
+
+.clr-primary{
+  color: #84a98c
+}
+
+.clr-secondary{
+  color: #274246;
 }
