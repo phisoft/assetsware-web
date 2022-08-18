@@ -3122,6 +3122,13 @@ fieldset:disabled .btn {
     background-color: #84a98c
 }
 
+@media (max-width: 810px) {
+    .btn-sm-primary {
+        color: #fff;
+        background-color: #84a98c
+    }
+}
+
 /* .btn-primary:hover {
     color: #fff;
     background-color: #025ce2;
@@ -3814,7 +3821,7 @@ fieldset:disabled .btn {
 .btn-group-lg>.btn,
 .btn-lg {
     padding: .5rem 1rem;
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
     border-radius: .3rem
 }
 
