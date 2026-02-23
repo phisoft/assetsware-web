@@ -1134,6 +1134,62 @@ a {
 }
 
 /* ========================================
+   WhatsApp Float Button
+======================================== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    background: #25D366;
+    color: var(--white);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 24px;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: var(--shadow-xl);
+    transition: var(--transition-base);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.whatsapp-float i {
+    font-size: 24px;
+    order: 2;
+}
+
+.whatsapp-float:hover {
+    background: #20BD5A;
+    transform: scale(1.05);
+}
+
+.whatsapp-text {
+    display: block;
+    order: 1;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 80px;
+        right: 20px;
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+    
+    .whatsapp-float i {
+        font-size: 20px;
+    }
+    
+    .whatsapp-text {
+        display: none;
+    }
+}
+
+/* ========================================
    Preloader
 ======================================== */
 .preloader {
