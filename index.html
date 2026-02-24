@@ -554,16 +554,17 @@
                             <h3>Request a Demo</h3>
                             <p>Fill out the form below and we'll get back to you within 24 hours.</p>
                         </div>
-                        <form action="mailto:info@phisoft.my" class="contact-form">
+                        <form id="request-demo-form" class="contact-form" action="https://send.bah.my/phisoft" enctype="multipart/form-data" method="POST" novalidate>
+                            <input type="hidden" name="subject" value="Assetsware - Request Demo">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="first-name" placeholder="First Name *" required>
+                                        <input type="text" name="name" placeholder="Name *" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="last-name" placeholder="Last Name">
+                                        <input type="text" name="phone" placeholder="Phone Number">
                                     </div>
                                 </div>
                             </div>
@@ -651,6 +652,45 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/imagesloaded.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        (function() {
+            function validateDemoForm() {
+                var isValid = true;
+                var form = document.getElementById('request-demo-form');
+                var required = form.querySelectorAll('[required]');
+                required.forEach(function(input) {
+                    if (!input.value.trim()) {
+                        isValid = false;
+                        input.classList.add('is-invalid');
+                    } else {
+                        input.classList.remove('is-invalid');
+                    }
+                });
+                return isValid;
+            }
+
+            document.getElementById('request-demo-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                if (!validateDemoForm()) return;
+
+                var form = e.target;
+                var formData = new FormData(form);
+
+                fetch(form.action, {
+                    method: form.method,
+                    body: formData
+                })
+                .then(function() {
+                    alert('Thank you! Your demo request has been sent. We\'ll get back to you within 24 hours.');
+                    form.reset();
+                })
+                .catch(function() {
+                    alert('Something went wrong. Please try again or contact us directly.');
+                });
+            });
+        })();
+    </script>
 </body>
 
 </html>
