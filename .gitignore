@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# Design/dev artifacts (screenshots, scratch files) — not part of the deployed site
+.claude-design/

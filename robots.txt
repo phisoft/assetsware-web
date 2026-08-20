@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Dev/design artifacts (screenshots, scratch pages) — keep out of the index
+Disallow: /.claude-design/
+
+Sitemap: https://www.assetsware.com/sitemap.xml

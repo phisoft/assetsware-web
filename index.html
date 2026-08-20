@@ -6,14 +6,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Assetsware - Smart Asset Tracking with QR Code | Asset Management System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>document.documentElement.classList.add('js');</script>
     <meta name="theme-color" content="#284246">
     <meta name="author" content="PHISOFT">
     <link rel="canonical" href="https://www.assetsware.com/">
 
     <!-- Primary Meta Tags -->
     <meta name="title" content="Assetsware - Smart Asset Tracking with QR Code | Asset Management System">
-    <meta name="description" content="Assetsware is a modern asset tracking and inventory management system using QR Code technology. Track, manage, and monitor all your assets in one place. Save time, reduce costs, and eliminate losses.">
-    <meta name="keywords" content="asset tracking, asset management, QR code tracking, inventory management, QR code asset management, asset tracking system, mobile asset management, CMMS, asset maintenance, QR code scanner, asset inventory, equipment tracking, IT asset management, fixed asset tracking">
+    <meta name="description" content="Track, manage, and monitor all your assets in one place with Assetsware's QR Code-based asset tracking system. Save time, reduce costs, and eliminate losses.">
+    <meta name="keywords" content="asset tracking, asset management, QR code tracking, inventory management, QR code asset management, asset tracking system, mobile asset management, CMMS, asset maintenance, QR code scanner, asset inventory, equipment tracking, IT asset management, fixed asset tracking, asset tracking software">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
 
@@ -21,8 +22,11 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.assetsware.com/">
     <meta property="og:title" content="Assetsware - Smart Asset Tracking with QR Code">
-    <meta property="og:description" content="Track, manage, and monitor all your assets in one place with our powerful QR Code-based asset management system. Save time, reduce costs, and eliminate losses.">
+    <meta property="og:description" content="Track, manage, and monitor all your assets in one place with our QR Code-based asset tracking system. Save time, reduce costs, and eliminate losses.">
     <meta property="og:image" content="https://www.assetsware.com/assets/img/logo/assetsware_ori.png">
+    <meta property="og:image:width" content="320">
+    <meta property="og:image:height" content="100">
+    <meta property="og:image:alt" content="Assetsware logo">
     <meta property="og:site_name" content="Assetsware">
     <meta property="og:locale" content="en_US">
 
@@ -39,7 +43,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo/icon_ori.png">
     <link rel="apple-touch-icon" href="assets/img/logo/icon_ori.png">
     <link rel="preconnect" href="https://challenges.cloudflare.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://wa.me">
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
     <!-- Structured Data - Organization -->
     <script type="application/ld+json">
     {
@@ -55,10 +62,76 @@
             "contactType": "sales",
             "email": "hello@phisoft.my"
         },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "H-8-10, Aeropod Commercial Square, Jalan Aeropod Off Jalan Kepayan",
+            "addressLocality": "Kota Kinabalu",
+            "addressRegion": "Sabah",
+            "postalCode": "88200",
+            "addressCountry": "MY"
+        },
         "sameAs": [
             "https://www.facebook.com/phisoft.my",
             "https://www.instagram.com/phisoft.my",
             "https://www.linkedin.com/company/phisoft-my"
+        ]
+    }
+    </script>
+
+    <!-- Structured Data - FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is Assetsware?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Assetsware is a QR-code-based asset tracking and management system that lets you track, borrow, inspect, and maintain physical assets from a web dashboard or the Android mobile app."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does QR code asset tracking work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Each asset receives a unique QR code label printed straight from the system. Staff scan the code with the mobile app to instantly see details, history, location, and status - no manual data entry required."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need special hardware to scan asset codes?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Any Android phone with a camera can scan asset codes using the Assetsware mobile app. Codes are printed as standard sticker labels."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What kinds of assets can I track?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Everything from laptops, lab equipment, and vehicles to furniture and office supplies. The system ships with more than 3,700 pre-loaded standard categories and supports custom categories."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does recurring maintenance scheduling work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Assign a schedule (daily, weekly, monthly, yearly, or custom) and Assetsware computes the next inspection date automatically. Inspections include condition ratings, checklist tasks, and photo evidence."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is my asset data secure?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Data is stored in secure cloud infrastructure with industry-standard encryption, and access is controlled through user roles. See our Privacy Policy for details."
+                }
+            }
         ]
     }
     </script>
@@ -79,620 +152,604 @@
             "price": "0",
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "500"
         }
     }
     </script>
 
-    <!-- ========================= CSS here ========================= -->
-    <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-alpha.min.css">
-    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Design system -->
+    <link rel="stylesheet" href="assets/css/site.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-    <![endif]-->
+    <a href="#main" class="skip-link">Skip to content</a>
 
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="loader">
-            <div class="ytp-spinner">
-                <div class="ytp-spinner-container">
-                    <div class="ytp-spinner-rotator">
-                        <div class="ytp-spinner-left">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                        <div class="ytp-spinner-right">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                    </div>
+    <!-- Navbar -->
+    <header class="nav" id="top">
+        <div class="nav-inner">
+            <a class="nav-brand" href="index.html" aria-label="Assetsware home">
+                <img src="assets/img/logo/assetsware_white.svg" alt="Assetsware" width="172" height="34">
+                <span class="brand-tag">QR&nbsp;Asset&nbsp;System</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu" aria-label="Primary">
+                <div class="nav-links">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#industries">Industries</a>
+                    <a href="#how-it-works">How It Works</a>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Header -->
-    <header class="header navbar-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/img/logo/assetsware_ori.svg" alt="Logo">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="toggler-icon"></span>
-                            <span class="toggler-icon"></span>
-                            <span class="toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                            <ul id="nav" class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="page-scroll active" href="#home">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="page-scroll" href="#features">Features</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="page-scroll" href="#how-it-works">How It Works</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="page-scroll" href="#testimonials">Testimonials</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="page-scroll" href="#contact">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+            </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="hero-background">
-            <div class="hero-shape hero-shape-1"></div>
-            <div class="hero-shape hero-shape-2"></div>
-            <div class="hero-shape hero-shape-3"></div>
-        </div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
+    <main id="main">
+
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-hud" aria-hidden="true">
+                    <span>ASW&nbsp;&middot;&nbsp;Scanner&nbsp;v1.0</span>
+                </div>
+                <div class="hero-grid">
                     <div class="hero-content">
-                        <span class="hero-badge">Trusted by 500+ Companies Worldwide</span>
-                        <h1 class="hero-title">Smart Asset Tracking <span class="text-gradient">Made Simple</span></h1>
-                        <p class="hero-description">Track, manage, and monitor all your assets in one place with our powerful QR Code-based asset management system. Save time, reduce costs, and eliminate losses.</p>
-                        <div class="hero-buttons">
-                            <a href="#contact" class="btn btn-primary btn-lg">Request Demo</a>
-                            <a href="#features" class="btn btn-outline btn-lg">Learn More</a>
+                        <span class="hero-badge"><i class="fa fa-qrcode" aria-hidden="true"></i> ASW&nbsp;·&nbsp;SCAN&nbsp;SYSTEM</span>
+                        <h1 class="hero-title">Asset Tracking <span class="mark">Made Simple</span></h1>
+                        <p class="hero-desc">One scan shows every asset's details, history, current holder, and next inspection &mdash; from any phone.</p>
+                        <div class="hero-stack">
+                            <span>QR Labels</span><span>Borrow &amp; Return</span><span>Maintenance</span><span>Reports</span>
                         </div>
+                        <div class="hero-actions">
+                            <button type="button" class="btn btn-primary btn-lg" data-open-dialog>Request Demo</button>
+                            <a href="#how-it-works" class="btn btn-ghost btn-lg">See How It Works</a>
+                        </div>
+                        <p class="hero-micro">Free demo setup &middot; No credit card required</p>
                         <div class="hero-stats">
-                            <div class="stat-item">
-                                <span class="stat-number">10K+</span>
-                                <span class="stat-label">Assets Tracked</span>
+                            <div class="stat">
+                                <b>3,700<em>+</em></b>
+                                <span>Standard Categories</span>
                             </div>
-                            <div class="stat-item">
-                                <span class="stat-number">500+</span>
-                                <span class="stat-label">Happy Clients</span>
+                            <div class="stat">
+                                <b>12</b>
+                                <span>Maintenance Schedules</span>
                             </div>
-                            <div class="stat-item">
-                                <span class="stat-number">99.9%</span>
-                                <span class="stat-label">Accuracy</span>
+                            <div class="stat">
+                                <b>24<em>h</em></b>
+                                <span>Demo Response Time</span>
                             </div>
                         </div>
+                        <p class="hero-trust">Built by <a href="https://www.phisoft.my/" target="_blank" rel="noopener noreferrer">PHISOFT</a> &middot; Kota Kinabalu, Malaysia</p>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="hero-image-wrapper">
-                        <img src="/assets/img/carousel/monitor.png" alt="Assetsware Dashboard" class="hero-image">
-                        <div class="hero-float-card float-card-1">
-                            <i class="fa fa-qrcode"></i>
-                            <span>QR Scanning</span>
+
+                    <div class="hero-visual reveal">
+                        <div class="scanner">
+                            <span class="finder tl" aria-hidden="true"></span>
+                            <span class="finder tr" aria-hidden="true"></span>
+                            <span class="finder bl" aria-hidden="true"></span>
+                            <div class="scan-head" aria-hidden="true">
+                                <span><i class="dot"></i><i class="dot"></i><i class="dot"></i></span>
+                                <span>CAM&nbsp;01</span>
+                            </div>
+                            <div class="scan-stage">
+                                <div class="scanline" aria-hidden="true"></div>
+                                <img class="qr-code" src="assets/img/qr-pattern.svg" alt="QR code asset label generated by Assetsware" width="290" height="290">
+                                <div class="hero-record" aria-hidden="true">
+                                    <div class="hero-record-head">
+                                        <b>ASW&middot;004821</b>
+                                        <span class="rec-status">Available</span>
+                                    </div>
+                                    <dl>
+                                        <div><dt>Asset</dt><dd>HP EliteBook 840 G8</dd></div>
+                                        <div><dt>Category</dt><dd>Laptop &middot; IT</dd></div>
+                                        <div><dt>Location</dt><dd>Lab 2 &mdash; East Wing</dd></div>
+                                        <div><dt>Next inspection</dt><dd>12 Sep 2026</dd></div>
+                                    </dl>
+                                </div>
+                                <span class="qr-tag">ASW&middot;004821 &mdash; Ready to scan</span>
+                            </div>
                         </div>
-                        <div class="hero-float-card float-card-2">
-                            <i class="fa fa-check-circle"></i>
-                            <span>Asset Verified</span>
+                        <div class="asset-chip c1">
+                            <span class="chip-qr" aria-hidden="true"><i class="fa fa-qrcode"></i></span>
+                            <span class="chip-text"><b class="chip-id">ASW-004821</b><span class="chip-name">Laptop&nbsp;&middot;&nbsp;HP&nbsp;EliteBook</span></span>
+                        </div>
+                        <div class="asset-chip c2">
+                            <span class="chip-qr" aria-hidden="true"><i class="fa fa-check-circle"></i></span>
+                            <span><b>STATUS</b>Asset&nbsp;Verified</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="hero-scroll" aria-hidden="true">
+                <span>Scroll</span>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="hero-edge" aria-hidden="true"></div>
+        </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8 col-lg-10 mx-auto">
-                    <div class="section-title text-center">
-                        <span class="section-subtitle">Features</span>
-                        <h2 class="section-title-text">Everything You Need for <span class="text-gradient">Asset Management</span></h2>
-                        <p class="section-description">Powerful features designed to streamline your asset tracking workflow and maximize efficiency.</p>
-                    </div>
+        <!-- Features -->
+        <section id="features" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="kicker">Features</span>
+                    <h2 class="section-title">Everything You Need for <span class="text-grad">Asset Management</span></h2>
+                    <p class="section-lead">Powerful features designed to streamline your asset tracking workflow and maximize efficiency.</p>
+                </div>
+
+                <div class="features-grid">
+                    <article class="feature-card featured reveal">
+                        <span class="feature-id">ASW&middot;F-01</span>
+                        <div class="feature-ico" aria-hidden="true"><i class="fa fa-qrcode"></i></div>
+                        <h3>QR Code Sticker Labels</h3>
+                        <p>Every asset gets a unique QR code automatically. Print ready-to-use sticker labels in the included 48&times;210mm label format.</p>
+                        <div class="feature-bg"></div>
+                    </article>
+
+                    <article class="feature-card featured wide reveal">
+                        <span class="feature-id">ASW&middot;F-02</span>
+                        <div class="feature-ico" aria-hidden="true"><i class="fa fa-mobile"></i></div>
+                        <h3>Mobile App with QR Scanner</h3>
+                        <p>Scan asset codes, borrow and return items, and run inspections straight from your Android device.</p>
+                        <div class="feature-bg"></div>
+                    </article>
+
+                    <article class="feature-card reveal">
+                        <span class="feature-id">ASW&middot;F-03</span>
+                        <div class="feature-ico" aria-hidden="true"><i class="fa fa-exchange"></i></div>
+                        <h3>Borrow &amp; Return Tracking</h3>
+                        <p>Record who has which asset and when it is due back. Track expected return dates, overdue items, and full borrowing history.</p>
+                        <div class="feature-bg"></div>
+                    </article>
+
+                    <article class="feature-card reveal">
+                        <span class="feature-id">ASW&middot;F-04</span>
+                        <div class="feature-ico" aria-hidden="true"><i class="fa fa-calendar-check-o"></i></div>
+                        <h3>Recurring Maintenance</h3>
+                        <p>Schedule inspections daily, weekly, monthly, or yearly. Next due dates are computed automatically with condition ratings and checklist tasks.</p>
+                        <div class="feature-bg"></div>
+                    </article>
+
+                    <article class="feature-card reveal">
+                        <span class="feature-id">ASW&middot;F-05</span>
+                        <div class="feature-ico" aria-hidden="true"><i class="fa fa-wrench"></i></div>
+                        <h3>Complaints &amp; Repairs</h3>
+                        <p>Log asset complaints with photo evidence, route them for review, and schedule the maintenance directly from the complaint.</p>
+                        <div class="feature-bg"></div>
+                    </article>
+
+                    <article class="feature-card reveal">
+                        <span class="feature-id">ASW&middot;F-06</span>
+                        <div class="feature-ico" aria-hidden="true"><i class="fa fa-file-text"></i></div>
+                        <h3>Excel &amp; PDF Reports</h3>
+                        <p>Generate asset inventories, histories, and maintenance records in Excel and PDF &mdash; ready to share with your team.</p>
+                        <div class="feature-bg"></div>
+                    </article>
+
+                    <article class="feature-card reveal">
+                        <span class="feature-id">ASW&middot;F-07</span>
+                        <div class="feature-ico" aria-hidden="true"><i class="fa fa-history"></i></div>
+                        <h3>Complete Asset Lifecycle</h3>
+                        <p>Track every event from placement and movement to upgrades and disposal, with an automatic audit trail on each asset.</p>
+                        <div class="feature-bg"></div>
+                    </article>
+
+                    <article class="feature-card reveal">
+                        <span class="feature-id">ASW&middot;F-08</span>
+                        <div class="feature-ico" aria-hidden="true"><i class="fa fa-sitemap"></i></div>
+                        <h3>Standardized Category Tree</h3>
+                        <p>3,700+ pre-loaded standard asset categories in a hierarchical tree, plus support for your own custom categories.</p>
+                        <div class="feature-bg"></div>
+                    </article>
                 </div>
             </div>
+        </section>
 
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa fa-qrcode"></i>
-                        </div>
-                        <h3>QR Code Tracking</h3>
-                        <p>Generate unique QR codes for each asset. Simply scan with your mobile device to instantly access asset details, history, and location.</p>
-                        <div class="feature-card-bg"></div>
-                    </div>
+        <!-- Industries -->
+        <section id="industries" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="kicker">Industries</span>
+                    <h2 class="section-title">Built for the Way <span class="text-grad">Your Organisation Works</span></h2>
+                    <p class="section-lead">From campuses to clinics to factory floors &mdash; the same QR-powered system adapts to schools, hospitals, offices, and public agencies.</p>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa fa-mobile"></i>
+
+                <div class="industry-grid">
+                    <article class="industry-card reveal">
+                        <div class="ind-head">
+                            <span class="ind-id">IND&middot;01</span>
+                            <span class="ind-ico" aria-hidden="true"><i class="fa fa-graduation-cap"></i></span>
                         </div>
-                        <h3>Mobile App</h3>
-                        <p>Manage assets on-the-go with our powerful mobile application. Available for both iOS and Android devices.</p>
-                        <div class="feature-card-bg"></div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa fa-file-text"></i>
+                        <h3>Education</h3>
+                        <p>Asset tracking for schools and universities &mdash; lab equipment, classroom IT, and furniture across every campus. Borrow/return flows keep shared devices accounted for, and scheduled inspections keep lab gear ready.</p>
+                        <div class="ind-tags"><span>QR Labels</span><span>Borrow &amp; Return</span><span>Inspections</span></div>
+                    </article>
+
+                    <article class="industry-card reveal">
+                        <div class="ind-head">
+                            <span class="ind-id">IND&middot;02</span>
+                            <span class="ind-ico" aria-hidden="true"><i class="fa fa-hospital-o"></i></span>
                         </div>
-                        <h3>Custom Reports</h3>
-                        <p>Generate detailed reports with just a click. Export to PDF, Excel, or share directly with stakeholders.</p>
-                        <div class="feature-card-bg"></div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa fa-exchange"></i>
+                        <h3>Healthcare</h3>
+                        <p>Log medical devices and equipment with photo-supported complaints and recurring inspections. Condition ratings and full history build dependable maintenance records for every unit.</p>
+                        <div class="ind-tags"><span>QR Labels</span><span>Complaints &amp; Repairs</span><span>Recurring Maintenance</span></div>
+                    </article>
+
+                    <article class="industry-card reveal">
+                        <div class="ind-head">
+                            <span class="ind-id">IND&middot;03</span>
+                            <span class="ind-ico" aria-hidden="true"><i class="fa fa-laptop"></i></span>
                         </div>
-                        <h3>Check In/Out</h3>
-                        <p>Track asset movement with ease. Record who has which asset and when it was checked out or returned.</p>
-                        <div class="feature-card-bg"></div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa fa-history"></i>
+                        <h3>IT &amp; Technology</h3>
+                        <p>Full lifecycle management for laptops, servers, and peripherals. One scan shows device history, current holder, warranty status, and the next inspection date.</p>
+                        <div class="ind-tags"><span>QR Labels</span><span>Asset Lifecycle</span><span>Excel &amp; PDF Reports</span></div>
+                    </article>
+
+                    <article class="industry-card reveal">
+                        <div class="ind-head">
+                            <span class="ind-id">IND&middot;04</span>
+                            <span class="ind-ico" aria-hidden="true"><i class="fa fa-industry"></i></span>
                         </div>
-                        <h3>Full Lifecycle History</h3>
-                        <p>Track assets from acquisition to retirement. Maintain complete audit trail and history for compliance.</p>
-                        <div class="feature-card-bg"></div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa fa-bell"></i>
+                        <h3>Manufacturing</h3>
+                        <p>Machinery, tools, and spare parts under one system. Photo-based complaints route straight into scheduled maintenance, with an automatic audit trail on every asset.</p>
+                        <div class="ind-tags"><span>Complaints &amp; Repairs</span><span>Audit Trail</span><span>Maintenance</span></div>
+                    </article>
+
+                    <article class="industry-card reveal">
+                        <div class="ind-head">
+                            <span class="ind-id">IND&middot;05</span>
+                            <span class="ind-ico" aria-hidden="true"><i class="fa fa-university"></i></span>
                         </div>
-                        <h3>Real-Time Notifications</h3>
-                        <p>Stay informed with instant alerts on asset movements, maintenance schedules, and due dates.</p>
-                        <div class="feature-card-bg"></div>
-                    </div>
+                        <h3>Government &amp; Public Sector</h3>
+                        <p>Standardized categories and complete movement history keep public asset records transparent and accountable &mdash; across departments and sites.</p>
+                        <div class="ind-tags"><span>Standard Categories</span><span>Movement History</span><span>Reports</span></div>
+                    </article>
+
+                    <article class="industry-card reveal">
+                        <div class="ind-head">
+                            <span class="ind-id">IND&middot;06</span>
+                            <span class="ind-ico" aria-hidden="true"><i class="fa fa-building-o"></i></span>
+                        </div>
+                        <h3>Facilities &amp; Property</h3>
+                        <p>Furniture, fittings, and office equipment tracked to room and site level &mdash; know exactly what is where, who has it, and when it needs attention.</p>
+                        <div class="ind-tags"><span>Location Tracking</span><span>Borrow &amp; Return</span><span>QR Labels</span></div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8 col-lg-10 mx-auto">
-                    <div class="section-title text-center">
-                        <span class="section-subtitle">How It Works</span>
-                        <h2 class="section-title-text">Get Started in <span class="text-gradient">4 Simple Steps</span></h2>
-                        <p class="section-description">Our intuitive system makes asset tracking effortless for teams of any size.</p>
-                    </div>
+        <!-- How It Works -->
+        <section id="how-it-works" class="section section-alt">
+            <div class="container">
+                <div class="section-head center reveal">
+                    <span class="kicker">How It Works</span>
+                    <h2 class="section-title">Get Started in <span class="text-grad">4 Simple Steps</span></h2>
+                    <p class="section-lead">From registration to maintenance and reporting &mdash; a workflow built around real asset management.</p>
                 </div>
-            </div>
 
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="step-card">
-                        <div class="step-number">01</div>
-                        <div class="step-icon">
-                            <i class="fa fa-plus-circle"></i>
-                        </div>
+                <div class="steps">
+                    <article class="step-card reveal">
+                        <span class="step-node" aria-hidden="true"></span>
+                        <span class="step-label">Step&nbsp;01</span>
                         <h3>Create Assets</h3>
                         <p>Add your assets to the system with all relevant details and specifications.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="step-card">
-                        <div class="step-number">02</div>
-                        <div class="step-icon">
-                            <i class="fa fa-print"></i>
-                        </div>
+                    </article>
+                    <article class="step-card reveal">
+                        <span class="step-node" aria-hidden="true"></span>
+                        <span class="step-label">Step&nbsp;02</span>
                         <h3>Print QR Codes</h3>
                         <p>Generate and print unique QR code labels for each asset.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="step-card">
-                        <div class="step-number">03</div>
-                        <div class="step-icon">
-                            <i class="fa fa-mobile"></i>
-                        </div>
-                        <h3>Scan & Track</h3>
+                    </article>
+                    <article class="step-card reveal">
+                        <span class="step-node" aria-hidden="true"></span>
+                        <span class="step-label">Step&nbsp;03</span>
+                        <h3>Scan &amp; Track</h3>
                         <p>Use our mobile app to scan QR codes and access instant asset information.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="step-card">
-                        <div class="step-number">04</div>
-                        <div class="step-icon">
-                            <i class="fa fa-chart-line"></i>
-                        </div>
-                        <h3>Analyze & Report</h3>
-                        <p>Gain insights with detailed reports and analytics dashboards.</p>
-                    </div>
+                    </article>
+                    <article class="step-card reveal">
+                        <span class="step-node" aria-hidden="true"></span>
+                        <span class="step-label">Step&nbsp;04</span>
+                        <h3>Report &amp; Maintain</h3>
+                        <p>Schedule recurring maintenance and track everything with live dashboards and reports.</p>
+                    </article>
                 </div>
             </div>
+        </section>
 
-            <!-- Process Images -->
-            <div class="row mt-5 pt-4">
-                <div class="col-md-3 col-6">
-                    <div class="process-image">
-                        <img src="assets/img/Gallery/1.png" alt="Dashboard">
-                        <div class="process-image-overlay">
-                            <span>Dashboard</span>
+        <!-- Benefits -->
+        <section class="section">
+            <div class="container">
+                <div class="benefits-grid">
+                    <div class="benefits-content reveal">
+                        <div class="section-head">
+                            <span class="kicker">Why Choose Assetsware?</span>
+                            <h2 class="section-title">Streamline Your Asset <span class="text-grad">Management Today</span></h2>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="process-image">
-                        <img src="assets/img/Gallery/2.png" alt="Asset Listing">
-                        <div class="process-image-overlay">
-                            <span>Asset Listing</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="process-image">
-                        <img src="assets/img/Gallery/3.png" alt="Create Asset">
-                        <div class="process-image-overlay">
-                            <span>Create Asset</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="process-image">
-                        <img src="assets/img/Gallery/4.png" alt="QR Code">
-                        <div class="process-image-overlay">
-                            <span>QR Code</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="benefits-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="benefits-content">
-                        <span class="section-subtitle">Why Choose Assetsware?</span>
-                        <h2 class="section-title-text">Streamline Your Asset <span class="text-gradient">Management Today</span></h2>
-                        <ul class="benefits-list">
-                            <li>
-                                <div class="benefit-icon">
-                                    <i class="fa fa-clock-o"></i>
-                                </div>
-                                <div class="benefit-text">
-                                    <h4>Save Time</h4>
-                                    <p>Reduce asset search time by up to 90% with instant QR code scanning.</p>
+                        <ul class="benefit-list">
+                            <li class="benefit-item">
+                                <span class="b-ico" aria-hidden="true"><i class="fa fa-clock-o"></i></span>
+                                <div>
+                                    <h4>Instant Lookups</h4>
+                                    <p>Scan a QR code with your phone to see asset details, history, and location in seconds.</p>
                                 </div>
                             </li>
-                            <li>
-                                <div class="benefit-icon">
-                                    <i class="fa fa-money"></i>
-                                </div>
-                                <div class="benefit-text">
-                                    <h4>Reduce Costs</h4>
-                                    <p>Prevent asset loss and unnecessary purchases with better tracking.</p>
+                            <li class="benefit-item">
+                                <span class="b-ico" aria-hidden="true"><i class="fa fa-money"></i></span>
+                                <div>
+                                    <h4>Prevent Losses</h4>
+                                    <p>Know exactly where every asset is and who has it. No more lost equipment or duplicate purchases.</p>
                                 </div>
                             </li>
-                            <li>
-                                <div class="benefit-icon">
-                                    <i class="fa fa-shield"></i>
-                                </div>
-                                <div class="benefit-text">
-                                    <h4>Improve Compliance</h4>
-                                    <p>Maintain accurate records for audits and regulatory requirements.</p>
+                            <li class="benefit-item">
+                                <span class="b-ico" aria-hidden="true"><i class="fa fa-calendar-check-o"></i></span>
+                                <div>
+                                    <h4>Proactive Maintenance</h4>
+                                    <p>Next inspection dates are computed automatically from each asset's schedule, so nothing gets missed.</p>
                                 </div>
                             </li>
-                            <li>
-                                <div class="benefit-icon">
-                                    <i class="fa fa-cloud"></i>
-                                </div>
-                                <div class="benefit-text">
-                                    <h4>Cloud-Based</h4>
-                                    <p>Access your data from anywhere, anytime. No software installation needed.</p>
+                            <li class="benefit-item">
+                                <span class="b-ico" aria-hidden="true"><i class="fa fa-cloud"></i></span>
+                                <div>
+                                    <h4>Centralized System</h4>
+                                    <p>One web-based system for your whole team. Every movement, inspection, and complaint in one place.</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="benefits-image">
-                        <img src="assets/img/carousel/headerAssets-new.png" alt="Benefits" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8 col-lg-10 mx-auto">
-                    <div class="section-title text-center">
-                        <span class="section-subtitle">Testimonials</span>
-                        <h2 class="section-title-text">Trusted by <span class="text-gradient">Industry Leaders</span></h2>
-                        <p class="section-description">See what our customers have to say about their experience with Assetsware.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-quote">
-                            <i class="fa fa-quote-left"></i>
-                        </div>
-                        <p class="testimonial-text">"Assetsware has transformed how we track our IT equipment. What used to take hours now takes minutes. The QR code system is brilliant!"</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fa fa-user"></i>
+                    <div class="benefit-visual reveal">
+                        <div class="b-frame">
+                            <span class="finder tl" aria-hidden="true"></span>
+                            <span class="finder tr" aria-hidden="true"></span>
+                            <span class="finder bl" aria-hidden="true"></span>
+                            <div class="spec-panel">
+                                <div class="spec-head">
+                                    <span><b>ASW&middot;004821</b>&nbsp;&nbsp;Asset Record</span>
+                                    <i class="fa fa-qrcode" aria-hidden="true"></i>
+                                </div>
+                                <dl class="spec-rows">
+                                    <div class="spec-row"><dt>Asset</dt><dd>HP EliteBook 840 G8</dd></div>
+                                    <div class="spec-row"><dt>Category</dt><dd>Laptop &middot; IT</dd></div>
+                                    <div class="spec-row"><dt>Location</dt><dd>Lab 2 &mdash; East Wing</dd></div>
+                                    <div class="spec-row"><dt>Status</dt><dd><span class="spec-status">Available</span></dd></div>
+                                    <div class="spec-row"><dt>Next Inspection</dt><dd>12 Sep 2026</dd></div>
+                                </dl>
                             </div>
-                            <div class="author-info">
-                                <h4>John Smith</h4>
-                                <span>IT Manager, Tech Corp</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-quote">
-                            <i class="fa fa-quote-left"></i>
-                        </div>
-                        <p class="testimonial-text">"We've reduced asset loss by 95% since implementing Assetsware. The mobile app makes it so easy for our team to scan and update assets on the go."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fa fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>Sarah Johnson</h4>
-                                <span>Operations Director, BuildCo</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-quote">
-                            <i class="fa fa-quote-left"></i>
-                        </div>
-                        <p class="testimonial-text">"The reporting features are incredibly powerful. We can now generate audit-ready reports in seconds. Highly recommend for any organization."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fa fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>Michael Chen</h4>
-                                <span>Finance Manager, Retail Plus</span>
+                            <div class="b-cap">
+                                <b>ASW&middot;OVERVIEW&nbsp;&mdash;&nbsp;01</b>
+                                <span>One&nbsp;Scan&nbsp;·&nbsp;Full&nbsp;Record</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-wrapper">
-                <div class="row align-items-center">
-                    <div class="col-lg-8">
-                        <div class="cta-content">
+        <!-- FAQ -->
+        <section id="faq" class="section">
+            <div class="container">
+                <div class="section-head center reveal">
+                    <span class="kicker">FAQ</span>
+                    <h2 class="section-title">Frequently Asked <span class="text-grad">Questions</span></h2>
+                    <p class="section-lead">Quick answers about how Assetsware tracks, borrows, inspects, and maintains your assets.</p>
+                </div>
+
+                <div class="faq-list reveal">
+                    <details class="faq-item" open>
+                        <summary>What is Assetsware?</summary>
+                        <div class="faq-a">
+                            <p>Assetsware is a QR-code-based asset tracking and management system that lets you track, borrow, inspect, and maintain physical assets from a web dashboard or the Android mobile app.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How does QR code asset tracking work?</summary>
+                        <div class="faq-a">
+                            <p>Each asset receives a unique QR code label printed straight from the system. Staff scan the code with the mobile app to instantly see details, history, location, and status &mdash; no manual data entry required.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Do I need special hardware to scan asset codes?</summary>
+                        <div class="faq-a">
+                            <p>No. Any Android phone with a camera can scan asset codes using the Assetsware mobile app. Codes are printed as standard sticker labels.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What kinds of assets can I track?</summary>
+                        <div class="faq-a">
+                            <p>Everything from laptops, lab equipment, and vehicles to furniture and office supplies. The system ships with more than 3,700 pre-loaded standard categories and supports custom categories.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How does recurring maintenance scheduling work?</summary>
+                        <div class="faq-a">
+                            <p>Assign a schedule (daily, weekly, monthly, yearly, or custom) and Assetsware computes the next inspection date automatically. Inspections include condition ratings, checklist tasks, and photo evidence.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Is my asset data secure?</summary>
+                        <div class="faq-a">
+                            <p>Yes. Data is stored in secure cloud infrastructure with industry-standard encryption, and access is controlled through user roles. See our Privacy Policy for details.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-band reveal">
+                    <div class="cta-grid">
+                        <div>
                             <h2>Ready to Transform Your Asset Management?</h2>
-                            <p>Join hundreds of companies already using Assetsware to streamline their operations.</p>
+                            <p>See how QR code tracking, scheduled maintenance, and smart reporting can streamline your operations.</p>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="cta-buttons">
-                            <a href="#contact" class="btn btn-light btn-lg">Request a Demo</a>
+                        <div class="cta-actions">
+                            <button type="button" class="btn btn-light btn-lg" data-open-dialog>Request a Demo</button>
                             <p class="cta-note">No credit card required</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5">
-                    <div class="contact-info-wrapper">
-                        <span class="section-subtitle">Get In Touch</span>
-                        <h2 class="section-title-text">Let's Discuss Your <span class="text-gradient">Asset Needs</span></h2>
-                        <p class="contact-intro">Have questions about how Assetsware can help your business? We'd love to hear from you.</p>
-                    </div>
+        <!-- Contact -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <div class="section-head center reveal">
+                    <span class="kicker">Get In Touch</span>
+                    <h2 class="section-title">Let's Discuss Your <span class="text-grad">Asset Needs</span></h2>
+                    <p class="section-lead">Have questions about how Assetsware can help your business? We'd love to hear from you.</p>
                 </div>
-                <div class="col-xl-7">
-                    <div class="contact-form-wrapper">
-                        <div class="section-title text-center mb-4">
-                            <h3>Request a Demo</h3>
-                            <p>Fill out the form below and we'll get back to you within 24 hours.</p>
-                        </div>
-                        <form id="request-demo-form" class="contact-form" action="https://send.bah.my/phisoft" enctype="multipart/form-data" method="POST" novalidate>
-                            <input type="hidden" name="subject" value="Assetsware - Request Demo">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="name" placeholder="Name *" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="phone" placeholder="Phone Number">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email Address *" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="company" placeholder="Company Name">
-                            </div>
-                            <div class="form-group">
-                                <select name="interest">
-                                    <option value="">Select Your Interest</option>
-                                    <option value="demo">Request a Demo</option>
-                                    <option value="pricing">Pricing Information</option>
-                                    <option value="support">Technical Support</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" placeholder="Your Message *" rows="4" required></textarea>
-                            </div>
-                            <div class="form-submit">
-                                <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
-                            </div>
-                            <div class="cf-turnstile mt-2" data-theme="light" data-sitekey="0x4AAAAAAARepDlzRUeiygyt"></div>
-                        </form>
-                    </div>
+
+                <div class="contact-cta reveal">
+                    <button type="button" class="btn btn-primary btn-lg" data-open-dialog>Request a Demo</button>
+                    <p class="contact-note">We'll get back to you within 24 hours &middot; No credit card required</p>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <!-- Demo request dialog -->
+    <dialog id="demo-dialog" class="demo-dialog" aria-labelledby="demo-dialog-title">
+        <div class="dialog-head">
+            <div>
+                <span class="kicker">Request a Demo</span>
+                <h3 id="demo-dialog-title">Request a Demo</h3>
+                <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+            </div>
+            <button type="button" class="dialog-close" data-close-dialog aria-label="Close dialog">&times;</button>
         </div>
-    </section>
+
+        <form id="request-demo-form" action="https://send.bah.my/phisoft" enctype="multipart/form-data" method="POST" novalidate>
+            <input type="hidden" name="subject" value="Assetsware - Request Demo">
+
+            <div class="form-grid">
+                <div class="form-field">
+                    <label for="f-name">Name *</label>
+                    <input type="text" id="f-name" name="name" placeholder="Your name" required data-error="Please enter your name.">
+                    <span class="field-error" aria-live="polite"></span>
+                </div>
+                <div class="form-field">
+                    <label for="f-phone">Phone Number</label>
+                    <input type="text" id="f-phone" name="phone" placeholder="Your phone number">
+                </div>
+                <div class="form-field full">
+                    <label for="f-email">Email Address *</label>
+                    <input type="email" id="f-email" name="email" placeholder="you@company.com" required data-error="Please enter a valid email address.">
+                    <span class="field-error" aria-live="polite"></span>
+                </div>
+                <div class="form-field full">
+                    <label for="f-company">Company Name</label>
+                    <input type="text" id="f-company" name="company" placeholder="Your company">
+                </div>
+                <div class="form-field full">
+                    <label for="f-interest">Select Your Interest</label>
+                    <select id="f-interest" name="interest">
+                        <option value="">Select Your Interest</option>
+                        <option value="demo">Request a Demo</option>
+                        <option value="pricing">Pricing Information</option>
+                        <option value="support">Technical Support</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-field full">
+                    <label for="f-message">Your Message *</label>
+                    <textarea id="f-message" name="message" rows="4" placeholder="Tell us about your asset tracking needs" required data-error="Please enter your message."></textarea>
+                    <span class="field-error" aria-live="polite"></span>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            </div>
+            <div class="cf-turnstile turnstile-wrap" id="demo-turnstile" data-theme="light" data-sitekey="0x4AAAAAAARepDlzRUeiygyt"></div>
+
+            <div class="form-status" role="status" aria-live="polite"></div>
+        </form>
+    </dialog>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-main">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer-widget">
-                            <a href="index.html" class="footer-logo">
-                                <img src="assets/img/logo/assetsware_ori.svg" alt="Logo">
-                            </a>
-                            <p class="footer-desc">Assetsware is a modern asset tracking and inventory management system using QR Code technology. Streamline your operations with ease.</p>
-                            <div class="footer-social">
-                                <a href="https://www.facebook.com/phisoft.my/"><i class="fa fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/phisoft.my/"><i class="fa fa-instagram"></i></a>
-                                <a href="https://www.linkedin.com/company/phisoft-my/"><i class="fa fa-linkedin"></i></a>
-                                <a href="https://www.phisoft.my/"><i class="fa fa-globe"></i></a>
-                            </div>
-                        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" aria-label="Assetsware home">
+                        <img src="assets/img/logo/assetsware_white.svg" alt="Assetsware" width="172" height="34">
+                    </a>
+                    <span class="footer-tag">ASW&nbsp;&middot;&nbsp;Asset Tracking System</span>
+                    <p>Assetsware is a modern asset tracking and inventory management system using QR Code technology. Streamline your operations with ease.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/phisoft.my/" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/phisoft.my/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/company/phisoft-my/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://www.phisoft.my/" aria-label="PHISOFT Website" target="_blank" rel="noopener noreferrer"><i class="fa fa-globe" aria-hidden="true"></i></a>
                     </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#industries">Industries</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><button type="button" class="link-btn" data-open-dialog>Request a Demo</button></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="https://www.phisoft.my/" target="_blank" rel="noopener noreferrer">About PHISOFT</a></li>
+                        <li><a href="https://www.phisoft.my/" target="_blank" rel="noopener noreferrer">Our Services</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="toc.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li class="contact-line"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:hello@phisoft.my">hello@phisoft.my</a></li>
+                        <li class="contact-line"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+60128731819">+6 012 873 1819</a></li>
+                        <li class="contact-line"><i class="fa fa-map-marker" aria-hidden="true"></i><span>H-08-10, Aeropod Commercial Square, Jalan Aeropod Off Jalan Kepayan, 88200 Kota Kinabalu, Sabah, MY.</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
+
         <div class="footer-bottom">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <p class="copyright-text">&copy; 2026 Assetsware. All rights reserved.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="footer-legal">
-                            <li><a href="privacy.html">Privacy Policy</a></li>
-                            <li><a href="toc.html">Terms of Service</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <p>&copy; 2026 Assetsware. All rights reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="toc.html">Terms of Service</a></li>
+                </ul>
+                <p class="footer-made">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    Built by <a href="https://www.phisoft.my/" target="_blank" rel="noopener noreferrer">PHISOFT</a>
+                    <span aria-hidden="true">&middot;</span> Kota Kinabalu, Sabah
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll Top -->
-    <a href="#" class="scroll-top">
-        <i class="fa fa-arrow-up"></i>
-    </a>
+    <!-- Floating widgets -->
+    <div class="float-stack">
+        <a href="#top" class="scroll-top" aria-label="Back to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+        <a href="https://wa.me/60128731819" class="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </a>
+    </div>
 
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/60128731819" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-        <i class="fa fa-whatsapp"></i>
-        <span class="whatsapp-text">Contact Us</span>
-    </a>
-
-    <!-- JS here -->
-    <script src="assets/js/bootstrap.bundle-5.0.0.alpha-min.js"></script>
-    <script src="assets/js/count-up.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/imagesloaded.min.js"></script>
-    <script src="assets/js/main.js"></script>
-
-    <script>
-        (function() {
-            function validateDemoForm() {
-                var isValid = true;
-                var form = document.getElementById('request-demo-form');
-                var required = form.querySelectorAll('[required]');
-                required.forEach(function(input) {
-                    if (!input.value.trim()) {
-                        isValid = false;
-                        input.classList.add('is-invalid');
-                    } else {
-                        input.classList.remove('is-invalid');
-                    }
-                });
-                return isValid;
-            }
-
-            document.getElementById('request-demo-form').addEventListener('submit', function(e) {
-                e.preventDefault();
-                if (!validateDemoForm()) return;
-
-                var form = e.target;
-                var formData = new FormData(form);
-
-                fetch(form.action, {
-                    method: form.method,
-                    body: formData
-                })
-                .then(function() {
-                    alert('Thank you! Your demo request has been sent. We\'ll get back to you within 24 hours.');
-                    form.reset();
-                })
-                .catch(function() {
-                    alert('Something went wrong. Please try again or contact us directly.');
-                });
-            });
-        })();
-    </script>
+    <!-- JS -->
+    <script src="assets/js/site.js"></script>
 </body>
 
 </html>
