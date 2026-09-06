@@ -2741,3 +2741,32 @@ body {
     font-size: 1.3rem;
     box-shadow: none;
 }
+
+/* ============================================================
+   MOBILE OVERFLOW FIXES — narrow-viewport horizontal scroll
+   ============================================================ */
+/* 1) let single-column grid sections shrink to the container
+      instead of growing to their intrinsic min-content */
+.benefits-grid > * { min-width: 0; }
+
+/* 2) the flattened light hero has no glow orbs — remove the
+      absolutely-positioned hero-visual pseudo glows that could
+      widen the hero on phones */
+.hero-visual::before,
+.hero-visual::after { content: none !important; }
+
+/* hero (and any single-column hero grid track) must shrink like benefits */
+.hero-grid > * { min-width: 0; }
+
+/* the eyebrow chip text should wrap on very small screens instead of
+   forcing its nowrap pill wider than the viewport */
+.hero-eyebrow { white-space: normal; line-height: 1.5; }
+/* grid sections must be allowed to shrink to a 1-col mobile track */
+.features-grid > *,
+.industry-grid > *,
+.steps > *
+{ min-width: 0; }
+/* benefits caption row: let the two mono labels wrap on narrow cards
+   instead of overflowing the benefit frame */
+.benefit-visual .b-cap { flex-wrap: wrap; gap: 6px 12px; }
+.benefit-visual .b-cap > span { margin-left: auto; min-width: 0; }
