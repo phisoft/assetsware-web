@@ -90,30 +90,6 @@
         });
     }
 
-    /* ---------- Hero: rotate the floating asset chip ---------- */
-    var chipWrap = $('.asset-chip.c1 .chip-text');
-    var chipId = $('.asset-chip.c1 .chip-id');
-    var chipName = $('.asset-chip.c1 .chip-name');
-    if (chipWrap && chipId && chipName && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        var chipItems = [
-            { id: 'ASW-004821', name: 'Laptop \u00b7 HP EliteBook' },
-            { id: 'ASW-012900', name: 'Projector \u00b7 Epson' },
-            { id: 'ASW-008211', name: 'Vehicle \u00b7 Perodua' },
-            { id: 'ASW-031104', name: 'Lab Equipment \u00b7 Microscope' },
-            { id: 'ASW-019556', name: 'IT Device \u00b7 Dell Monitor' }
-        ];
-        var chipIdx = 0;
-        window.setInterval(function () {
-            chipIdx = (chipIdx + 1) % chipItems.length;
-            chipWrap.style.opacity = '0';
-            window.setTimeout(function () {
-                chipId.textContent = chipItems[chipIdx].id;
-                chipName.textContent = chipItems[chipIdx].name;
-                chipWrap.style.opacity = '1';
-            }, 300);
-        }, 3500);
-    }
-
     /* ---------- Demo request dialog ---------- */
     var dialog = $('#demo-dialog');
     if (dialog && typeof dialog.showModal === 'function') {
